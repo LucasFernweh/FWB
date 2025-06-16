@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Fazendo o cabeçalho do TaskMaster -->
+    <header>    
+        <img alt="" src="Task.svg">
+            <nav>
+                <ul>    
+                    <li class="menu-heading"><a href="index.html">Página Inicial</a></li>
+                    <li class="menu-heading"><a href="quem_somos.html">Quem somos</a></li>
+                    <li class="menu-heading"><a href="contato.html">Contatos</a></li>                 
+                    <li class="menu-heading"><a href="">Login</a></li>
+                </ul>
+            </nav>
+    </header>
+
+<!-- Fazendo o Formulario do Contatos  -->
+
+    <main>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" class="campo">
+
+            <label for="celular">Celular</label>
+            <input type="text" id="celular" placeholder="Digite seu celular" class="campo">
+            
+            <!-- Envelopando o tipo "radio" para saber se o celular do usuario é whastapp ou não -->
+            
+            
+                <p>Seu celular é Whatsapp?</p>
+                <div>
+                    <label for="whatsapp-sim">Sim</label>
+                    <input type="radio" name="Whatsapp" id="whatsapp-sim" class="marcador" value="Sim">
+                </div>
+                <div>
+                    <label for="whatsapp-nao">Não</label>
+                    <input type="radio" name="Whatsapp" id="whatsapp-nao" class="marcador" value="Não">
+                </div>
+                
+
+            <!-- ------------------------------------------------------------------------------- -->
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" class="campo">
+
+            <label for="mensagem">Deixe uma mensagem para nós</label>
+            <textarea cols="70" rows="10" id="mensagem" placeholder="Digite-nos uma mensagem e entraremos em contato" class="campo"></textarea>
+            
+            <div class="checkbox_email">
+                <label for="checkbox">Gostaria de receber nossas novidades por email?</label>
+                <input type="checkbox" id="checkbox">
+            </div>
+            <div class="botao_submit">
+                <input type="submit" value="Enviar" >
+            </div>
+            
+        </form>
+    </main>
+    <footer class="rodape">
+        <h1>Redes Sociais</h1>
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Linkedin</li>
+            <li>Contato: (00)90000-0000</li>
+        </ul>
+    </footer>
+</body>
